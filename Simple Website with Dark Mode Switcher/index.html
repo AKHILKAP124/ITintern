@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>itintern</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-200 dark:bg-[#212121] dark:text-white font-[Poppins]">
+    <header>
+      <nav class="h-32 w-screen flex flex-col gap-10 px-8">
+        <div class="mode-switcher ml-[96%] mb-2">
+          <label id="theme-toggle-button">
+            <input type="checkbox" id="toggle" />
+            <svg
+              viewBox="0 0 69.667 44"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(3.5 3.5)"
+                data-name="Component 15 – 1"
+                id="Component_15_1"
+              >
+                <g
+                  filter="url(#container)"
+                  transform="matrix(1, 0, 0, 1, -3.5, -3.5)"
+                >
+                  <rect
+                    fill="#83cbd8"
+                    transform="translate(3.5 3.5)"
+                    rx="17.5"
+                    height="35"
+                    width="60.667"
+                    data-name="container"
+                    id="container"
+                  ></rect>
+                </g>
+
+                <g transform="translate(2.333 2.333)" id="button">
+                  <g data-name="sun" id="sun">
+                    <g
+                      filter="url(#sun-outer)"
+                      transform="matrix(1, 0, 0, 1, -5.83, -5.83)"
+                    >
+                      <circle
+                        fill="#f8e664"
+                        transform="translate(5.83 5.83)"
+                        r="15.167"
+                        cy="15.167"
+                        cx="15.167"
+                        data-name="sun-outer"
+                        id="sun-outer-2"
+                      ></circle>
+                    </g>
+                    <g
+                      filter="url(#sun)"
+                      transform="matrix(1, 0, 0, 1, -5.83, -5.83)"
+                    >
+                      <path
+                        fill="rgba(246,254,247,0.29)"
+                        transform="translate(9.33 9.33)"
+                        d="M11.667,0A11.667,11.667,0,1,1,0,11.667,11.667,11.667,0,0,1,11.667,0Z"
+                        data-name="sun"
+                        id="sun-3"
+                      ></path>
+                    </g>
+                    <circle
+                      fill="#fcf4b9"
+                      transform="translate(8.167 8.167)"
+                      r="7"
+                      cy="7"
+                      cx="7"
+                      id="sun-inner"
+                    ></circle>
+                  </g>
+
+                  <g data-name="moon" id="moon">
+                    <g
+                      filter="url(#moon)"
+                      transform="matrix(1, 0, 0, 1, -31.5, -5.83)"
+                    >
+                      <circle
+                        fill="#cce6ee"
+                        transform="translate(31.5 5.83)"
+                        r="15.167"
+                        cy="15.167"
+                        cx="15.167"
+                        data-name="moon"
+                        id="moon-3"
+                      ></circle>
+                    </g>
+                    <g
+                      fill="#a6cad0"
+                      transform="translate(-24.415 -1.009)"
+                      id="patches"
+                    >
+                      <circle
+                        transform="translate(43.009 4.496)"
+                        r="2"
+                        cy="2"
+                        cx="2"
+                      ></circle>
+                      <circle
+                        transform="translate(39.366 17.952)"
+                        r="2"
+                        cy="2"
+                        cx="2"
+                        data-name="patch"
+                      ></circle>
+                      <circle
+                        transform="translate(33.016 8.044)"
+                        r="1"
+                        cy="1"
+                        cx="1"
+                        data-name="patch"
+                      ></circle>
+                      <circle
+                        transform="translate(51.081 18.888)"
+                        r="1"
+                        cy="1"
+                        cx="1"
+                        data-name="patch"
+                      ></circle>
+                      <circle
+                        transform="translate(33.016 22.503)"
+                        r="1"
+                        cy="1"
+                        cx="1"
+                        data-name="patch"
+                      ></circle>
+                      <circle
+                        transform="translate(50.081 10.53)"
+                        r="1.5"
+                        cy="1.5"
+                        cx="1.5"
+                        data-name="patch"
+                      ></circle>
+                    </g>
+                  </g>
+                </g>
+
+                <g
+                  filter="url(#cloud)"
+                  transform="matrix(1, 0, 0, 1, -3.5, -3.5)"
+                >
+                  <path
+                    fill="#fff"
+                    transform="translate(-3466.47 -160.94)"
+                    d="M3512.81,173.815a4.463,4.463,0,0,1,2.243.62.95.95,0,0,1,.72-1.281,4.852,4.852,0,0,1,2.623.519c.034.02-.5-1.968.281-2.716a2.117,2.117,0,0,1,2.829-.274,1.821,1.821,0,0,1,.854,1.858c.063.037,2.594-.049,3.285,1.273s-.865,2.544-.807,2.626a12.192,12.192,0,0,1,2.278.892c.553.448,1.106,1.992-1.62,2.927a7.742,7.742,0,0,1-3.762-.3c-1.28-.49-1.181-2.65-1.137-2.624s-1.417,2.2-2.623,2.2a4.172,4.172,0,0,1-2.394-1.206,3.825,3.825,0,0,1-2.771.774c-3.429-.46-2.333-3.267-2.2-3.55A3.721,3.721,0,0,1,3512.81,173.815Z"
+                    data-name="cloud"
+                    id="cloud"
+                  ></path>
+                </g>
+
+                <g fill="#def8ff" transform="translate(3.585 1.325)" id="stars">
+                  <path
+                    transform="matrix(-1, 0.017, -0.017, -1, 24.231, 3.055)"
+                    d="M.774,0,.566.559,0,.539.458.933.25,1.492l.485-.361.458.394L1.024.953,1.509.592.943.572Z"
+                  ></path>
+                  <path
+                    transform="matrix(-0.777, 0.629, -0.629, -0.777, 23.185, 12.358)"
+                    d="M1.341.529.836.472.736,0,.505.46,0,.4.4.729l-.231.46L.605.932l.4.326L.9.786Z"
+                    data-name="star"
+                  ></path>
+                  <path
+                    transform="matrix(0.438, 0.899, -0.899, 0.438, 23.177, 29.735)"
+                    d="M.015,1.065.475.9l.285.365L.766.772l.46-.164L.745.494.751,0,.481.407,0,.293.285.658Z"
+                    data-name="star"
+                  ></path>
+                  <path
+                    transform="translate(12.677 0.388) rotate(104)"
+                    d="M1.161,1.6,1.059,1,1.574.722.962.607.86,0,.613.572,0,.457.446.881.2,1.454l.516-.274Z"
+                    data-name="star"
+                  ></path>
+                  <path
+                    transform="matrix(-0.07, 0.998, -0.998, -0.07, 11.066, 15.457)"
+                    d="M.873,1.648l.114-.62L1.579.945,1.03.62,1.144,0,.706.464.157.139.438.7,0,1.167l.592-.083Z"
+                    data-name="star"
+                  ></path>
+                  <path
+                    transform="translate(8.326 28.061) rotate(11)"
+                    d="M.593,0,.638.724,0,.982l.7.211.045.724.36-.64.7.211L1.342.935,1.7.294,1.063.552Z"
+                    data-name="star"
+                  ></path>
+                  <path
+                    transform="translate(5.012 5.962) rotate(172)"
+                    d="M.816,0,.5.455,0,.311.323.767l-.312.455.516-.215.323.456L.827.911,1.343.7.839.552Z"
+                    data-name="star"
+                  ></path>
+                  <path
+                    transform="translate(2.218 14.616) rotate(169)"
+                    d="M1.261,0,.774.571.114.3.487.967,0,1.538.728,1.32l.372.662.047-.749.728-.218L1.215.749Z"
+                    data-name="star"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </label>
+        </div>
+        <div class="navbar flex justify-between">
+          <div class="logo text-3xl flex gap-0">
+            <span class="dark:text-blue-700 text-blue-950">IT</span>
+            <span class="dark:text-blue-400 text-blue-600">intern</span>
+          </div>
+          <div class="nav-items lg:w-[50%]">
+            <ul class="w-full h-full flex justify-between items-center text-lg">
+              <li
+                class="hover:bg-slate-300 dark:hover:bg-[#3a3a3a] px-2 cursor-pointer rounded-sm"
+              >
+                Home
+              </li>
+              <li
+                class="hover:bg-slate-300 dark:hover:bg-[#3a3a3a] px-2 cursor-pointer rounded-sm"
+              >
+                Course/Intership
+              </li>
+              <li
+                class="hover:bg-slate-300 dark:hover:bg-[#3a3a3a] px-2 cursor-pointer rounded-sm"
+              >
+                Certificate Verification
+              </li>
+              <li
+                class="hover:bg-slate-300 dark:hover:bg-[#3a3a3a] px-2 cursor-pointer rounded-sm"
+              >
+                About Us
+              </li>
+              <li
+                class="hover:bg-slate-300 dark:hover:bg-[#3a3a3a] px-2 cursor-pointer rounded-sm"
+              >
+                Contact Us
+              </li>
+              <li>
+                <button
+                  class="h-12 w-40 rounded-lg bg-blue-900 text-lg text-white"
+                >
+                  DashBoard
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-screen h-4/6">
+      <div class="inner-text h-full px-10 mt-52">
+        <div class="text">
+          <h1 class="text-5xl ml-80">
+            Forge Your Career Path with Our Internship Programs
+          </h1>
+          <h2 class="text-3xl ml-[40%]">Your Future Starts Here</h2>
+          <p class="text-lg text-center">
+            Ready to take the first step toward an exciting and rewarding
+            career? Apply now to ITintern's internship program and embark on a
+            journey where your ideas are valued, your growth is nurtured, and
+            your future is bright.
+          </p>
+          <p class="text-lg ml-[35%] mt-8">
+            With us, you're not just an intern—
+            <span class="text-green-500">you're a vital part of our team.</span>
+          </p>
+        </div>
+        <div class="buttons flex gap-16 ml-[40%] mt-14">
+          <button
+            class="w-40 h-12 text-xl bg-green-500 dark:bg-transparent dark:border-2 dark:border-green-500 dark:text-green-500 rounded-md"
+          >
+            Adimin
+          </button>
+          <button
+            class="w-40 h-12 text-xl bg-green-500 dark:bg-transparent dark:border-2 dark:border-green-500 dark:text-green-500 rounded-md"
+          >
+            Student
+          </button>
+        </div>
+      </div>
+      <div class="w-screen">
+        <div
+          class="Courses-content mt-4 flex flex-col items-center gap-28 mb-56"
+        >
+          <h1 class="text-center text-5xl font-semibold">
+            Our Various Courses
+          </h1>
+          <div class="items flex gap-72">
+            <div
+              class="w-72 h-96 border-2 dark:border-slate-700 dark:shadow-[#4d4d4d] dark:hover:shadow-[#858484] p-2 cursor-pointer rounded-lg shadow-lg shadow-gray-200 hover:shadow-gray-300"
+            >
+              <img
+                class="w-full border-2 h-72 object-cover rounded-lg"
+                src="https://itintern.in/Website.jpg"
+                alt=""
+              />
+              <p class="text-center text-lg font-semibold mt-10">
+                Web Development
+              </p>
+            </div>
+            <div
+              class="w-72 h-96 border-2 dark:border-slate-700 dark:shadow-[#4d4d4d] dark:hover:shadow-[#858484] p-2 cursor-pointer rounded-lg shadow-lg shadow-gray-200 hover:shadow-gray-300"
+            >
+              <img
+                class="w-full border-2 h-72 object-cover rounded-lg"
+                src="https://itintern.in/App-Development.jpg"
+                alt=""
+              />
+              <p class="text-center text-lg font-semibold mt-10">
+                App Development
+              </p>
+            </div>
+            <div
+              class="w-72 h-96 border-2 dark:border-slate-700 dark:shadow-[#4d4d4d] dark:hover:shadow-[#858484] p-2 cursor-pointer rounded-lg shadow-lg shadow-gray-200 hover:shadow-gray-300"
+            >
+              <img
+                class="w-full border-2 h-72 object-cover rounded-lg"
+                src="https://itintern.in/System-Design.jpg"
+                alt=""
+              />
+              <p class="text-center text-lg font-semibold mt-10">Web Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="About-us mb-96">
+          <div class="flex gap-10">
+            <div class="img-part w-2/5 h-[500px] relative">
+              <div class="w-96 h-96 bg-whit absolute left-16 top-10">
+                <img
+                  class="rounded-md h-full"
+                  src="https://itintern.in/about1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="w-96 h-96 absolute right-32 top-60">
+                <img
+                  class="h-full rounded-md"
+                  src="https://itintern.in/about2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="text-part w-1/2 flex flex-col gap-10">
+              <h1
+                class="text-5xl font-semibold text-blue-950 dark:text-blue-500"
+              >
+                About Us
+              </h1>
+              <p class="text-lg">
+                At
+                <span class="text-blue-950 dark:text-blue-500 font-semibold"
+                  >ITintern,</span
+                >
+                we believe that internships are more than just a stepping
+                stone—they are a journey of discovery and growth.Our mission is
+                to provide meaningful internship opportunities that help
+                students gain practical experience and prepare them for
+                successful careers. We are committed to creating an inclusive,
+                dynamic environment where your potential can truly flourish.
+                Join us, and transform your internship experience into an
+                unforgettable adventure that shapes your future career.
+              </p>
+              <button
+                class="w-48 h-14 text-white text-lg font-semibold dark:bg-transparent dark:border-2 dark:border-blue-500 dark:text-blue-500 bg-blue-950 rounded-md"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Contact-us w-screen px-36 flex flex-col gap-10 mb-96">
+        <div class="">
+          <p
+            class="text-center text-2xl font-semibold dark:text-blue-500 text-blue-950"
+          >
+            Get in Touch
+          </p>
+          <p class="text-center text-3xl">Contact for any query</p>
+        </div>
+        <div class="flex gap-10">
+          <div class="form w-[45%] h-96 flex flex-col gap-6">
+            <h1 class="text-center text-2xl dark:text-blue-500 text-blue-950">
+              Send Message
+            </h1>
+            <div class="flex flex-col gap-4">
+              <input
+                class="h-12 rounded-md border border-gray-400 px-4 dark:bg-transparent outline-none"
+                placeholder="Your Name"
+                type="text"
+              />
+              <input
+                class="h-12 rounded-md border border-gray-400 px-4 dark:bg-transparent outline-none"
+                placeholder="Your Email"
+                type="text"
+              />
+              <textarea
+                class="h-12 rounded-md border border-gray-400 px-4 resize-y pt-2 dark:bg-transparent outline-none"
+                placeholder="Message*"
+                type="text"
+              ></textarea>
+            </div>
+            <button
+              class="w-56 h-12 bg-blue-950 text-white dark:text-blue-500 dark:bg-transparent dark:border-2 dark:border-blue-500 text-xl rounded-md"
+            >
+              Send
+            </button>
+          </div>
+          <div class="imgs img-part w-2/4 relative">
+            <div
+              class="w-[650px] h-[450px] bg-whit absolute right-0 top-0 border-4 rounded-md border-black dark:border-white"
+            ></div>
+            <div class="w-[650px] h-[450px] absolute right-20 top-16">
+              <img
+                class="w-full h-full rounded-md"
+                src="https://itintern.in/contact1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="h-80 w-screen bg-[#212121] flex flex-col justify-around border-t-2 border-gray-600">
+        <div class="flex items-center">
+          <div class="address flex flex-col items-center gap-2 ml-[10%]">
+            <h1 class="text-white text-3xl">Address</h1>
+            <p class="text-gray-500">
+              <i class="fa-solid fa-location-dot fa-sm text-gray-500 mr-2"></i
+              >MG Road, Sanjay Palace, Agra, Uttar Pradesh
+            </p>
+            <p class="text-gray-500">
+              <i class="fa-solid fa-phone fa-sm text-gray-500 mr-2"></i>Phone:
+              +91 84453 30776
+            </p>
+            <p class="text-gray-500">
+              <i class="fa-solid fa-envelope fa-sm text-gray-500 mr-2"></i
+              >Email: support@itintern.in
+            </p>
+          </div>
+          <div class="links flex flex-col items-center gap-2 ml-[16%]">
+            <h1 class="text-white text-3xl">Links</h1>
+            <ul class="text-gray-500 text-center">
+              <li class="hover:underline cursor-pointer">Home</li>
+              <li class="hover:underline cursor-pointer">
+                Courses/Internships
+              </li>
+              <li class="hover:underline cursor-pointer">
+                Certificate Verfication
+              </li>
+              <li class="hover:underline cursor-pointer">About Us</li>
+              <li class="hover:underline cursor-pointer">Contact Us</li>
+            </ul>
+          </div>
+          <div class="Follow flex flex-col items-center gap-2 ml-[16%]">
+            <h1 class="text-white text-3xl">Follow</h1>
+            <!-- From Uiverse.io by david-mohseni -->
+            <ul class="wrapper">
+              <li class="icon facebook">
+                <svg
+                  viewBox="0 0 320 512"
+                  height="1.2em"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="icon twitter">
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  height="16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="socialSvg twitterSvg"
+                >
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="icon instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1.2em"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </li>
+              <li class="icon linkdin">
+                <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                  ></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-gray-500 text-center">
+          © 2024 ITintern. All rights reserved.
+        </div>
+      </footer>
+    </main>
+    <!-- end -->
+    <script src="script.js"></script>
+  </body>
+</html>
